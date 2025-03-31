@@ -1,8 +1,11 @@
-import { usePopularGenres } from "./usePopularGenres"
+'use client'
+
+import { Menu } from '../Menu'
+import { usePopularGenres } from './usePopularGenres'
 
 export function GenreMenu() {
-  const {} = usePopularGenres()
+  const { data, isLoading } = usePopularGenres()
 
-  return <div>GenreMenu</div>
+  return isLoading ? <div>Loading...</div> : <Menu menu={{ title: 'Popular genres', items: data || [] }} />
 }
 
