@@ -10,7 +10,7 @@
 	"importOrder": [
 		"<THIRD_PARTY_MODULES>",
 		"^@/components/(.*)$",
-		"^@/layout/(.*)$",
+		"^@/screen/(.*)$",
 		"^@/ui/(.*)$",
 		"^@/providers/(.*)$",
 		"^@/constants/(.*)$",

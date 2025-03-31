@@ -1,0 +1,11 @@
+.active {
+  border-right: 4px solid var(--color-primary) !important;
+
+  >a>span {
+    color: white !important;
+  }
+
+  >a>svg {
+    fill: var(--color-primary) !important;
+  }
+}

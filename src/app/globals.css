@@ -1,21 +1,30 @@
-@use 'tailwindcss' as *;
+@import 'tailwindcss';
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #fefefe;
+	--foreground: #020202;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
+		--background: #020202;
+		--foreground: #fefefe;
 	}
 }
 
 body {
-	background: var(--background);
+	@apply bg-gray-900;
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-outfit);
+}
+
+input[type='file'],
+input[type='file']::-webkit-file-upload-button {
+  @apply cursor-pointer focus:outline-none;
+}
+
+input:focus {
+  box-shadow: none !important;
 }
 
 @layer components {
