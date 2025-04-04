@@ -7,7 +7,7 @@ interface Props {
 }
 
 export function Menu({menu}: Readonly<Props>) {
-  return <div className='mb-14 animate-fade'>
+  return <div className='mb-14 animate-fade overflow-hidden'>
     <div className='text-gray-500 uppercase text-sm font-semibold pl-layout'>{menu.title}</div>
     <ul>
       {menu.items.map(item => (

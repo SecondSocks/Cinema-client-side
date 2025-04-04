@@ -13,11 +13,34 @@ const OutfitFont = Outfit({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.APP_URL as string),
   title: {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`
   },
   description: 'Best for watch cinema',
+  alternates: {
+    canonical: process.env.APP_URL,
+    languages: {
+      'en': '/en',
+      'ru': '/ru'
+    }
+  },
+  openGraph: {
+    title: SITE_NAME,
+    description: 'Best for watch cinema',
+    url: process.env.APP_URL,
+    siteName: SITE_NAME,
+    // images: [
+    //   {
+    //     url: `${process.env.APP_URL}/images/og-image.jpg`,
+    //     width: 1200,
+    //     height: 630
+    //   }
+    // ],
+    locale: 'en_US',
+    type: 'website'
+  },
   keywords: [
     'watch cinema',
     'watch movies',

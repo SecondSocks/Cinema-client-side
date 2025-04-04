@@ -25,7 +25,7 @@ export const SERVER_URLS = {
     GET_BY_ACTOR: `${API_URL}/movie/by-actor`,
     GET_BY_GENRES: `${API_URL}/movie/by-genres`,
     GET_MOST_POPULAR: `${API_URL}/movie/most-popular`,
-    UPDATE_COUNT_OPENED: `${API_URL}/movie/update-count-opene`,
+    UPDATE_COUNT_OPENED: `${API_URL}/movie/update-count-opened`,
   },
   RATING: {
     BASE: `${API_URL}/rating`,
