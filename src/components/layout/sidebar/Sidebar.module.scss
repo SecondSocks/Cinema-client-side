@@ -1,0 +1,13 @@
+.wrapper {
+  @apply relative;
+}
+
+.list {
+  top: calc(100% + 15px);
+
+  > a {
+    &::after {
+      transition: height .3s ease-in-out, background-color .3s ease-in-out;
+    }
+  }
+}
