@@ -46,6 +46,7 @@ export const SERVER_URLS = {
 export const CLIENT_URLS = {
   HOME: '/',
   MOVIE: '/movie',
+  TRENDING: '/trending',
   ACTOR: '/actor',
   GENRE: '/genre',
   ADMIN: '/manage'

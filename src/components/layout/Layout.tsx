@@ -8,6 +8,6 @@ export function Layout({ children }: Readonly<{ children: ReactNode }>) {
     <main className='min-h-screen p-layout my-0 mx-[20%]'>
       {children}
     </main>
-    <Sidebar className='fixed top-0 bottom-0 overflow-y-scroll w-1/5 max-w-[350px] right-0 border-l border-l-gray-800' />
+    <Sidebar className='fixed top-0 bottom-0 overflow-y-scroll w-1/5 max-w-[350px] right-0 border-l border-l-gray-800 p-layout' />
   </div>
 }

@@ -1,0 +1,13 @@
+.item {
+  > a {
+    img {
+      border: 1px solid transparent !important;
+    }
+
+    &:hover {
+      img {
+        border-color: var(--color-primary) !important;
+      }
+    }
+  }
+}

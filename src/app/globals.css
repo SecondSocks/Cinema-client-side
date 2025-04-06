@@ -73,6 +73,12 @@ input:focus {
 		align-items: center;
 	}
 
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 	.image-like-bg {
 		object-position: center;
 		object-fit: cover;
