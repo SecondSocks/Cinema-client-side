@@ -22,3 +22,6 @@ export const THEMES = {
 		}
 	}
 }
+
+export type TypeTheme = typeof THEMES.dark
+export type TypeThemeColors = keyof typeof THEMES.dark.colors

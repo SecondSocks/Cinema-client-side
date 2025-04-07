@@ -1,9 +1,227 @@
 {
-	"editor.fontFamily": "Jetbrains Mono",
-	"editor.codeLensFontFamily": "Jetbrains Mono",
-	"editor.inlayHints.fontFamily": "Jetbrains Mono",
-	"editor.inlineSuggest.fontFamily": "Jetbrains Mono",
-	"scm.inputFontFamily": "Jetbrains Mono",
-	"notebook.markup.fontFamily": "Jetbrains Mono",
-	"notebook.output.fontFamily": "Jetbrains Mono"
-}
+	"editor.snippetSuggestions": "bottom",
+	"window.openFilesInNewWindow": "off",
+	"editor.tabSize": 2,
+	"editor.folding": false,
+	"editor.insertSpaces": false,
+	"editor.smoothScrolling": true,
+	"editor.minimap.enabled": false,
+	"editor.detectIndentation": true,
+	"editor.suggestSelection": "first",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.wordWrap": "bounded",
+	"editor.wrappingIndent": "same",
+	"editor.wordWrapColumn": 80,
+	"editor.scrollBeyondLastLine": true,
+	"editor.linkedEditing": true,
+	"html.autoClosingTags": true,
+	"javascript.autoClosingTags": true,
+	"typescript.autoClosingTags": true,
+	"editor.renderControlCharacters": false,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"html.completion.attributeDefaultValue": "singlequotes",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.glyphMargin": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"window.density.editorTabHeight": "compact",
+	"editor.accessibilitySupport": "off",
+	"symbols.hidesExplorerArrows": false,
+	"workbench.iconTheme": "icons",
+	"workbench.activityBar.location": "hidden",
+	"workbench.editor.editorActionsLocation": "hidden",
+	"workbench.editor.empty.hint": "hidden",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorSmoothCaretAnimation": "explicit",
+	"editor.fontSize": 18,
+	"editor.lineHeight": 28.5,
+	"editor.fontWeight": "400",
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "Fira Code",
+	"editor.inlayHints.fontFamily": "Fira Code",
+	"chat.editor.fontFamily": "Fira Code",
+	"editor.codeLensFontFamily": "Fira Code",
+	"debug.console.fontFamily": "Fira Code",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"entity.name.type.class",
+					"keyword",
+					"constant",
+					"storage.modifier",
+					"storage.type.class.js"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.cursorStyle": "line",
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.startupEditor": "newUntitledFile",
+	"debug.toolBarLocation": "hidden",
+	"debug.focusWindowOnBreak": false,
+	"debug.showInlineBreakpointCandidates": false,
+	"debug.showBreakpointsInOverviewRuler": false,
+	"emmet.includeLanguages": {
+		"blade": "html",
+		"javascript": "javascriptreact"
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.inlineSuggest.enabled": true,
+	"[blade]": {
+		"editor.defaultFormatter": "onecentlin.laravel-blade"
+	},
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off",
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.format.semicolons": "remove",
+	"typescript.format.semicolons": "remove",
+	"js/ts.implicitProjectConfig.experimentalDecorators": true,
+	"cSpell.language": "en,ru",
+	"cSpell.enabled": true,
+	"cSpell.enableFiletypes": [
+		"blade",
+		"jsx",
+		"tsx",
+		"ts",
+		"js",
+		"scss",
+		"sass",
+		"vue"
+	],
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true,
+		" ": true
+	},
+	"editor.hideCursorInOverviewRuler": true,
+	"git.enableSmartCommit": true,
+	"files.exclude": {
+		"**/.expo": true,
+		"**/.expo-shared": true,
+		"**/.idea": true,
+		"**/.nuxt": true
+	},
+	"files.defaultLanguage": "plaintext",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"git.openRepositoryInParentFolders": "never",
+	"editor.gotoLocation.multipleDefinitions": "goto",
+	"window.zoomLevel": 1,
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.enabled": false,
+	"redhat.telemetry.enabled": false,
+	"github.copilot.editor.enableAutoCompletions": true,
+	"window.commandCenter": false,
+	"workbench.editor.customLabels.patterns": {
+		"**/app/**/[[]*[]]/[[]*[]]/page.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/[[]*[]]/page.tsx": "${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/page.tsx": "${dirname}/page.tsx",
+		"**/app/**/[[]*[]]/[[]*[]]/layout.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/[[]*[]]/layout.tsx": "${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/layout.tsx": "${dirname}/layout.tsx"
+	},
+	"cSpell.userWords": [
+		"экспереминтерировать",
+		"appwrite",
+		"autoincrement",
+		"Chakra",
+		"clsx",
+		"cuid",
+		"datasource",
+		"filtred",
+		"pangea",
+		"persistor",
+		"pomodoro",
+		"recaptcha",
+		"sitekey",
+		"testid"
+	],
+	"markdown.updateLinksOnFileMove.enabled": "always",
+	"javascript.experimental.updateImportsOnPaste": true,
+	"typescript.experimental.updateImportsOnPaste": true,
+	"markdown.experimental.updateLinksOnPaste": true,
+	"cSpell.autoFormatConfigFile": true,
+	"workbench.statusBar.visible": false,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"explorer.confirmPasteNative": false,
+	"sonarlint.rules": {
+		"typescript:S6819": {
+			"level": "off"
+		},
+		"typescript:S3358": {
+			"level": "off"
+		},
+		"typescript:S905": {
+			"level": "off"
+		},
+		"typescript:S6544": {
+			"level": "off"
+		},
+		"typescript:S6861": {
+			"level": "off"
+		},
+		"typescript:S125": {
+			"level": "off"
+		}
+	},
+	"workbench.editorAssociations": {
+		"*.json": "default"
+	},
+	"breadcrumbs.icons": false,
+	"explorer.compactFolders": false,
+	"window.customTitleBarVisibility": "auto",

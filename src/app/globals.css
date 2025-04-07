@@ -13,8 +13,6 @@
 }
 
 body {
-	@apply bg-gray-900;
-	color: var(--foreground);
 	font-family: var(--font-outfit);
 }
 

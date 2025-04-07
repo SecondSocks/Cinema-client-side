@@ -9,10 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function NotFound() {
-
   return <div className='w-full h-full flex-center flex-col'>
-      <Heading title='404 - Page not found' className='text-white' />
-      <Link replace={true} className='btn-primary px-3 py-2 mt-6 hover:scale-105 transition-transform' href='/'>Go to Home</Link>
-    </div>
+    <Heading title='404 - Page not found' className='text-white' />
+    <Link replace={true} className='btn-primary px-3 py-2 mt-6 hover:scale-105 transition-transform' href='/'>Go to Home</Link>
+  </div>
 }
 

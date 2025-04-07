@@ -1,9 +1,9 @@
 import { Layout } from "@/components/layout/Layout"
+import { SITE_NAME } from "@/config/seo.config"
+import { MainProvider } from "@/providers/MainProvider"
 import type { Metadata } from "next"
 import { Outfit } from "next/font/google"
 import "./globals.css"
-import { MainProvider } from "@/providers/MainProvider"
-import { SITE_NAME } from "@/config/seo.config"
 
 const OutfitFont = Outfit({
   variable: "--font-outfit",
@@ -57,6 +57,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body

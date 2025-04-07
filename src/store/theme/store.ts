@@ -1,9 +1,29 @@
-import { createStore } from 'zustand'
+import { TypeThemeColors } from '@/config/theme.config'
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
 
-//TODO: create store for theme with localstorage
-export const store = createStore(set => {
-	return {
-		theme: 'light',
-		toggleTheme: () => set(state => ({ theme: state.theme === 'light' ? 'dark' : 'light' }))
-	}
-})
+interface IThemeStore {
+	theme: 'dark' | 'light'
+	color?: TypeThemeColors
+	toggleTheme: () => void
+	setTheme?: (theme: 'dark' | 'light') => void
+	setColor?: (color: TypeThemeColors) => void
+}
+
+export const themeStore = create(
+	persist<IThemeStore>(set => ({
+			theme: 'dark',
+			color: 'red',
+			toggleTheme: () => set(state => ({
+				theme: state.theme === 'dark' ? 'light' : 'dark'
+			})),
+			setTheme: (theme) => set(() => ({
+				theme: theme
+			})),
+			setColor: (color) => set(() => ({
+				color: color
+			}))
+		}), 
+		{ name: 'theme' }
+	)
+)

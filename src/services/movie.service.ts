@@ -14,6 +14,12 @@ class MovieService {
 
     return movies
   }
+
+  async getById(id: string) {
+    const { data: movie } = await axiosClassic.get<IMovie>(`${SERVER_URLS.MOVIE.BASE}/${id}`)
+
+    return movie
+  }
 }
 
 export const movieService = new MovieService()
