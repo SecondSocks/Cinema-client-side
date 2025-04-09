@@ -1,6 +1,6 @@
 'use client'
 
-import { themeStore } from '@/store/theme/store'
+import { ThemeSwitcher } from '@/components/ui/switcher/ThemeSwitcher'
 import { MoviesContainer } from "./movies-container/MoviesContainer"
 import { Search } from "./search/Search"
 
@@ -9,10 +9,11 @@ interface Props {
 }
 
 export function Sidebar({className}: Readonly<Props>) {
-  const theme = themeStore(state => state.theme)
-  
-  return <div className={className}>
-    <Search theme={theme} />
-    <MoviesContainer />
+  return <div className={`${className} flex flex-col justify-between`}>
+    <div>
+      <Search />
+      <MoviesContainer />
+    </div>
+    <ThemeSwitcher />
   </div>
 }

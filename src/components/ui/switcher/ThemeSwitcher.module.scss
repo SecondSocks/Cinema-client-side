@@ -1,0 +1,40 @@
+$track-width: 48px;
+$thumb-size: 24px;
+$thumb-active-offset: calc($track-width - $thumb-size);
+
+$border-radius: calc($thumb-size / 2);
+
+$track-color: var(--color-gray-100);
+$thumb-color: var(--color-primary);
+$accent-color: #ff80b9;
+
+.switch {
+	align-self: flex-end;
+}
+
+.switch .track {
+	display: inline-block;
+	background-color: $track-color;
+	width: $track-width;
+	height: $thumb-size;
+	border-radius: $border-radius;
+
+	transition: background-color 200ms;
+}
+
+.switch .thumb {
+	display: inline-block;
+	background-color: $thumb-color;
+	width: $thumb-size;
+	height: $thumb-size;
+	border-radius: 50%;
+
+	transition: transform 200ms;
+}
+
+.switch input:checked + .track {
+	background-color: $accent-color;
+}
+.switch input:checked + .track .thumb {
+	transform: translateX($thumb-active-offset);
+}
