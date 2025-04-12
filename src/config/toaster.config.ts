@@ -1,5 +1,5 @@
 export const darkToastOptions = {
-	duration: 5000,
+	duration: 4000,
 	style: {
 		backgroundColor: 'var(--color-gray-950)',
 		color: 'var(--color-white)',
@@ -16,7 +16,7 @@ export const darkToastOptions = {
 }
 
 export const lightToastOptions = {
-	duration: 5000,
+	duration: 4000,
 	style: {
 		backgroundColor: 'var(--color-white)',
 		color: 'var(--color-gray-950)',

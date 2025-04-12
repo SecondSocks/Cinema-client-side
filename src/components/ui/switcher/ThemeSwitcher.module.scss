@@ -6,7 +6,7 @@ $border-radius: calc($thumb-size / 2);
 
 $track-color: var(--color-gray-100);
 $thumb-color: var(--color-primary);
-$accent-color: #ff80b9;
+$accent-color: var(--color-gray-800);
 
 .switch {
 	align-self: flex-end;

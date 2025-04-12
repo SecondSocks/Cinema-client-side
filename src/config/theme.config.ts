@@ -1,6 +1,6 @@
 export const THEMES = {
 	dark: {
-		bg: '#020202',
+		bg: 'bg-gray-900',
 		fg: '#fefefe',
 		colors: {
 			red: '#e30b13',
@@ -11,7 +11,7 @@ export const THEMES = {
 		}
 	},
 	light: {
-		bg: '#fefefe',
+		bg: 'bg-white/90',
 		fg: '#020202',
 		colors: {
 			red: '#e30b13',
