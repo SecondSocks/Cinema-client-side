@@ -20,7 +20,7 @@ export function LogoutButton() {
 
   return <li className='px-8 border-r-4 border-r-transparent transition-colors'>
     <Link 
-      href='#' 
+      href='/' 
       onClick={handleLogout} 
       className={cn('flex items-center transition-colors px-3 mt-6 cursor-pointer', {
         ['text-gray-600']: theme === 'dark',

@@ -1,9 +1,9 @@
 import { LayoutWrapper } from '@/components/layout/LayoutWrapper'
 import { SITE_NAME } from "@/config/seo.config"
 import MainProvider from "@/providers/MainProvider"
-import { type TypeComponentAuthFields } from '@/types/auth.types'
 import type { Metadata } from "next"
 import { Outfit } from "next/font/google"
+import { ReactNode } from 'react'
 import "./globals.css"
 
 const OutfitFont = Outfit({
@@ -55,8 +55,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  Component
-}: Readonly<TypeComponentAuthFields>) {
+}: Readonly<{ children: ReactNode }>) {
 
 
   return (
@@ -64,7 +63,7 @@ export default function RootLayout({
       <body
         className={`${OutfitFont.variable} antialiased`}
       >
-        <MainProvider Component={Component}>
+        <MainProvider>
           <LayoutWrapper>
             {children}
           </LayoutWrapper>

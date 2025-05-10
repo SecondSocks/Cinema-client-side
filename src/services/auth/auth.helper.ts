@@ -22,5 +22,3 @@ export const removeFromStorage = () => {
 	Cookies.remove(NAMES.accessToken)
 	Cookies.remove(NAMES.refreshToken)
 }
-
-//TODO: get user from storage
