@@ -27,7 +27,7 @@
 	"window.density.editorTabHeight": "compact",
 	"editor.accessibilitySupport": "off",
 	"symbols.hidesExplorerArrows": false,
-	"workbench.iconTheme": "icons",
+	"workbench.iconTheme": "catppuccin-latte",
 	"workbench.activityBar.location": "hidden",
 	"workbench.editor.editorActionsLocation": "hidden",
 	"workbench.editor.empty.hint": "hidden",

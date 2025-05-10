@@ -4,8 +4,9 @@ import { MaterialIcon } from '@/components/ui/MaterialIcon'
 import { darkToastOptions, lightToastOptions } from '@/config/toaster.config'
 import { themeStore } from '@/store/theme/store'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { ReactNode } from "react"
+import { ReactNode } from 'react'
 import { Toaster } from 'sonner'
+import AuthProvider from './AuthProviders/AuthProvider'
 import { ThemeGate } from './ThemeGate'
 
 const queryClient = new QueryClient({
@@ -16,12 +17,18 @@ const queryClient = new QueryClient({
   }
 })
 
-export function MainProvider({ children }: Readonly<{ children: ReactNode }>) {
+interface Props {
+  children: ReactNode
+}
+
+export default function MainProvider({ children }: Readonly<Props>) {
   const theme = themeStore(state => state.theme)
 
   return <ThemeGate>
     <QueryClientProvider client={queryClient}>
-      {children}
+      <AuthProvider>
+        {children}
+      </AuthProvider>
       <Toaster 
         expand
         visibleToasts={5}

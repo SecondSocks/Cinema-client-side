@@ -1,6 +1,7 @@
-import { Layout } from "@/components/layout/Layout"
+import { LayoutWrapper } from '@/components/layout/LayoutWrapper'
 import { SITE_NAME } from "@/config/seo.config"
-import { MainProvider } from "@/providers/MainProvider"
+import MainProvider from "@/providers/MainProvider"
+import { type TypeComponentAuthFields } from '@/types/auth.types'
 import type { Metadata } from "next"
 import { Outfit } from "next/font/google"
 import "./globals.css"
@@ -54,9 +55,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  Component
+}: Readonly<TypeComponentAuthFields>) {
 
 
   return (
@@ -64,10 +64,10 @@ export default function RootLayout({
       <body
         className={`${OutfitFont.variable} antialiased`}
       >
-        <MainProvider>
-          <Layout>
+        <MainProvider Component={Component}>
+          <LayoutWrapper>
             {children}
-          </Layout>
+          </LayoutWrapper>
         </MainProvider>
       </body>
     </html>

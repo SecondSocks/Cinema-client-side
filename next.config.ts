@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -9,17 +9,26 @@ const nextConfig: NextConfig = {
     APP_SERVER_URL: process.env.APP_SERVER_URL
   },
   async rewrites() {
-	return [
-		{
-			source: '/api/:path*',
-			destination: 'http://localhost:4200/api/:path*'
-		},
-		{
-			source: '/uploads/:path*',
-			destination: 'http://localhost:4200/uploads/:path*'
-		}
-	]
-  }
+		return [
+			{
+				source: '/api/:path*',
+				destination: 'http://localhost:4200/api/:path*'
+			},
+			{
+				source: '/uploads/:path*',
+				destination: 'http://localhost:4200/uploads/:path*'
+			}
+		]
+  },
+	async redirects() {
+		return [
+			{
+				source: '/auth',
+				destination: '/auth/login',
+				permanent: true 
+			}
+		]
+	}
 };
 
 export default nextConfig;

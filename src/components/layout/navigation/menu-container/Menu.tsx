@@ -22,7 +22,7 @@ export function Menu({menu}: Readonly<Props>) {
       {menu.items.map(item => (
         <MenuItem key={item.link} item={item} theme={theme} />
       ))}
-      {menu.title === 'General' ? <AuthItems /> : null}
+      {menu.title === 'General' ? <AuthItems theme={theme} /> : null}
     </ul>
   </div>
 }

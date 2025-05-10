@@ -82,6 +82,23 @@ input:focus {
 		object-fit: cover;
 		pointer-events: none;
 	}
+
+	.underline-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .underline-hover:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 @theme inline {
@@ -119,6 +136,7 @@ input:focus {
 
 	--animate-fade: fade 0.5s ease-in-out;
 	--animate-scaleIn: scaleIn 0.35s ease-in-out;
+	--animate-popUp: popUp 0.5s ease-in-out;
 
 	@keyframes fade {
 		from {
@@ -140,6 +158,18 @@ input:focus {
 		100% {
 			opacity: 1;
 			transform: scale(1);
+		}
+	}
+
+	@keyframes popUp {
+		0% {
+			transform: scale(0.9);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1)
 		}
 	}
 }
